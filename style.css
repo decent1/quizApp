@@ -49,6 +49,7 @@
         border: none;
         box-shadow: 0 10px 12px rgb(50, 50, 50);
         transition: .5s;
+        margin: 30px;
         outline: none !important;
     }
     
@@ -56,4 +57,57 @@
         background-color: transparent;
         color: white;
         border: 2px solid;
+    }
+
+    adminPanel
+    .styleInput{
+        background-color: transparent;
+        border: none;
+       border-bottom: 1px solid white;
+transition: .5s;
+font-size: 1em;
+width: 100%;
+  color: white;
+        width: 50%;
+        outline: none;
+        padding: 10px;
+    }
+
+    .styleInput:focus{
+        border-bottom: 1px solid brown; 
+    }
+    .styleInput::placeholder{
+        color: white;
+    }
+    .admin{
+        display: block;
+    }
+    .option{
+        background-color: white;
+        color: green;
+    }
+    .optionInp{
+        border: none;
+        color: green;
+        padding: 10px;
+        margin: 5px;
+        border-bottom: 1px solid green;
+    font-size: 1em;
+    width: 80%;
+outline: none;
+transition: .5s;
+    }
+    .optionInp:focus{
+        border-bottom: 1px solid #005ec8;
+    }
+    .nextopt{
+        padding: 10px;
+        margin: 5px;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        background-color: white;
+        box-shadow: 0 0 10px lightgrey;
+        font-size: 1em;
+        border: none;
     }
