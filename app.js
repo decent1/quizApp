@@ -82,20 +82,25 @@ function check(answer, index){
       
         alert(`Your answer is wrong. Your Score is ${score}/${alquestions.length}`)
     }
-    nextQuestion()
     
+    
+    if(questionNo == alquestions.length) {
+        alert('Last question!')
+    }
+    console.log('Question No:' + questionNo)
+    console.log(index)
 
+    if(questionNo < alquestions.length -1) {
+        nextQuestion()
+    } else {
+        let options = document.getElementById('options')
+        newOption.style.display = 'none' //  We hiding the newOptions
+        para.innerHTML = `Your score is: ${score}/${alquestions.length}`
+      
+        // We are appending this button to the options DIV beforeend means to the  bpttom*
+        options.insertAdjacentHTML('beforeend', ` <button id="restartBtn" class="nextbtn" onclick="location.reload()" > Restart </button>`)
+        // options.insertAdjacentHTML('beforeend', ` <button id="restartBtn" class="nextbtn"> Restart </button>`)
 
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
 
